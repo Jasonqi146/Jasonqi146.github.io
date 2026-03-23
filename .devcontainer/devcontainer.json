@@ -9,12 +9,14 @@
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
       "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
     },
-    "ghcr.io/devcontainers-contrib/features/prettier:1": {}
+    "ghcr.io/devcontainers/features/node:1": {}
+    //"ghcr.io/devcontainers-contrib/features/prettier:1": {}
   },
+  
 
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
+  "postCreateCommand": "npm i -g prettier",
   "postAttachCommand": "./bin/entry_point.sh",
-
   "customizations": {
     "vscode": {
       "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one"],

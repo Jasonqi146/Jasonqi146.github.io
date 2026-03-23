@@ -1,200 +1,260 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Zhengyang Qi",
+    "label": "Research Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "jasonqi146@gmail.com",
+    "phone": "404-797-9976",
+    "url": "https://jasonqi146.github.io",
+    "summary": "Research engineer working at the intersection of agentic RL, alignment, training systems, and evaluation. I turn brittle research workflows into scalable training, evaluation, and data capability for frontier models.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
       "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "region": "California",
+      "countryCode": "US"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Jasonqi146",
+        "url": "https://github.com/Jasonqi146"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "qc6CJjYAAAAJ",
+        "url": "https://scholar.google.com/citations?user=qc6CJjYAAAAJ"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Snorkel AI",
+      "position": "Research Scientist",
+      "url": "https://snorkel.ai",
+      "location": "San Francisco, CA",
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "summary": "Post-training frontier language models and building evaluation environments for agentic systems.",
+      "highlights": [
+        "Led GRPO post-training for LLM-based terminal coding agents on internal Terminal Bench tasks, scaled synthetic mid-training trajectory generation, and improved task success 2.2x from 5.6% to 13.4% on Qwen-3 models.",
+        "Built agentic RL systems from scratch with verl, Ray-based training frameworks, AWS and Kubernetes cluster management, and distributed rollout infrastructure spanning 64 H200 GPUs.",
+        "Designed and built 50+ professional computer-use tasks and environments for visual agents, covering complex interface grounding, long-context behavior, and test-time compute in circuit design workflows.",
+        "Designed rubric-based and preference-based human annotation pipelines for medical conversational agents and prototyped 40k+ context synthetic data generation via EHR simulation."
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Scale AI",
+      "position": "Machine Learning Research Engineer",
+      "url": "https://scale.com",
+      "location": "San Francisco, CA",
+      "startDate": "2024-08-01",
+      "endDate": "2025-08-01",
+      "summary": "Post-trained LLM judges and built scalable oversight systems for human-AI data pipelines.",
+      "highlights": [
+        "Led post-training for LLM judge models with SFT and GRPO, curated 60k+ frontier-capability datasets, and delivered a production reward judge model that outperformed GPT-4o in reward and preference alignment.",
+        "Built production auto-evaluation and scalable oversight systems with multi-agent debate, context management, and reliable A/B-tested metrics, reducing human labeling reliance by up to 60%.",
+        "Developed automated quality control agents for RLHF rubric pipelines via RAG, tool use, and multi-agent debate, consistently improving over baseline heuristics."
+      ]
+    },
+    {
+      "name": "Intuit",
+      "position": "Software Engineer (Machine Learning) Intern",
+      "url": "https://www.intuit.com",
+      "location": "San Diego, CA",
+      "startDate": "2023-05-01",
+      "endDate": "2023-08-01",
+      "summary": "Built ML microservices for tax form understanding and automation.",
+      "highlights": [
+        "Designed and implemented scalable ML microservices to identify redundant data across 1k+ variations of tax forms for 42M users, integrating GPT-3.5, XGBoost, and Spring Boot."
+      ]
+    },
+    {
+      "name": "Intuit",
+      "position": "Software Engineer (Machine Learning) Intern",
+      "url": "https://www.intuit.com",
+      "location": "Remote",
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-01",
+      "summary": "Built multimodal inference pipelines and optimized large-scale image processing systems.",
+      "highlights": [
+        "Constructed an image captioning model with GPT-2/3 and CLIP, built a Spark pipeline for 70k+ images, reduced model size by 68%, and cut inference latency by 82% with CUDA and PyTorch FSDP."
+      ]
+    },
+    {
+      "name": "Kiwi",
+      "position": "Co-Founder & Machine Learning Engineer",
+      "url": "",
+      "location": "Atlanta, GA",
+      "startDate": "2020-12-01",
+      "endDate": "2021-12-01",
+      "summary": "Built recommendation and data infrastructure for a retail startup.",
+      "highlights": [
+        "Led a three-engineer team building a multimodal recommender system across 18 retailers, automated acquisition of 100k+ items, and achieved a 64% improvement over baseline on entity matching with XGBoost and LightGBM."
+      ]
     }
   ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Carnegie Mellon University",
+      "location": "Pittsburgh, PA",
+      "url": "https://www.cmu.edu",
+      "area": "Intelligent Information Systems",
+      "studyType": "M.S.",
+      "startDate": "2022-08-01",
+      "endDate": "2024-05-01",
+      "score": "3.84/4.00",
+      "courses": [
+        "School of Computer Science",
+        "GPA: 3.84/4.00"
+      ]
+    },
+    {
+      "institution": "Georgia Institute of Technology and Emory University",
+      "location": "Atlanta, GA",
+      "url": "",
+      "area": "Dual Degree Program",
+      "studyType": "B.S. in Computer Science, B.A. in Mathematics and Economics",
+      "startDate": "2017-08-01",
+      "endDate": "2022-05-01",
+      "score": "3.92/4.00",
+      "courses": [
+        "GPA: 3.92/4.00"
+      ]
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  "awards": [],
+  "certificates": [],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "RIFT: A Rubric Failure Mode Taxonomy and Automated Diagnostics",
+      "publisher": "ICLR 2026 Data Problems for Foundation Models Workshop",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "With Charles Dikens, Derek Pham, Amanda Dsouza, Armin Parchami, Fred Sala, and Paroma Varma."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "BeTaL: Adaptive Benchmarking with LLM-Guided Environment Design",
+      "publisher": "ICML 2026 (under review)",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "With Amanda Dsouza, Harit Vishwakarma, Justin Bauer, Derek Pham, Tom Walshe, Armin Parchami, Fred Sala, and Paroma Varma."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Sotopia-RL: Reward Design For Social Intelligence",
+      "publisher": "ICML 2026 (under review)",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "With Haofei Yu, Yining Zhao, Keyang Xuan, Kolby Nottingham, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, and Jiaxuan You."
+    },
+    {
+      "name": "MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction Experts",
+      "publisher": "EMNLP 2024 Main Conference",
+      "releaseDate": "2024-01-01",
+      "url": "",
+      "summary": "With Haofei Yu, Lawrence Jang, Ruslan Salakhutdinov, Louis-Philippe Morency, and Paul Pu Liang."
+    },
+    {
+      "name": "Sotopia-pi: Interactive Learning of Socially Intelligent Language Agents",
+      "publisher": "ACL 2024 Main Conference",
+      "releaseDate": "2024-01-01",
+      "url": "",
+      "summary": "With Ruiyi Wang, Haofei Yu, Wenxin Zhang, Maarten Sap, Graham Neubig, Yonatan Bisk, and Hao Zhu."
+    },
+    {
+      "name": "Sotopia: Interactive Evaluation for Social Intelligence in Language Agents",
+      "publisher": "ICLR 2024 Spotlight",
+      "releaseDate": "2024-01-01",
+      "url": "",
+      "summary": "With Xuhui Zhu, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, and Maarten Sap."
+    },
+    {
+      "name": "Long-Horizon Dialogue State Tracking for Role Identification in the Game of Avalon with Large Language Models",
+      "publisher": "Findings of EMNLP 2023",
+      "releaseDate": "2023-01-01",
+      "url": "",
+      "summary": "With Simon Stepputtis, Joseph Campbell, Yaqi Xie, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Michael Lewis, and Katia P. Sycara."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Languages",
+      "level": "",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "C++",
+        "Go",
+        "Java",
+        "TypeScript",
+        "SQL",
+        "Unix shell"
+      ]
+    },
+    {
+      "name": "ML & Systems",
+      "level": "",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "PyTorch",
+        "Ray",
+        "vLLM",
+        "Triton",
+        "CUDA",
+        "Distributed Training (FSDP, DeepSpeed)",
+        "Spark"
+      ]
+    },
+    {
+      "name": "Frontier AI",
+      "level": "",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "RLHF/RLAIF (PPO, GRPO, DPO, ReST)",
+        "Rubrics",
+        "Reward Modeling",
+        "Scalable Oversight",
+        "Synthetic Data Generation",
+        "Test-Time Compute",
+        "Chain-of-Thought (CoT)",
+        "Multimodal Models"
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+  "languages": [],
+  "interests": [],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Chinese FLAN-T5 (Open Source)",
+      "summary": "Contributed 20+ pipelines for instruction-following LLMs in Chinese and eight languages.",
+      "highlights": [
+        "Expanded multilingual instruction-following support and open-source tooling across Chinese and eight additional languages."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Amex Default Prediction (Kaggle Top 1.6%)",
+      "summary": "Built ensemble models and advanced feature-engineering pipelines for a top-ranked competition finish.",
+      "highlights": [
+        "Combined ensemble methods and feature engineering to place in the top 1.6% of the competition."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Distributed Systems (Go)",
+      "summary": "Implemented core distributed systems building blocks from scratch.",
+      "highlights": [
+        "Built UDP-based reliable networking, RAFT consensus, and an actor-model system for multi-user state management."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Search Engine Systems (Java, Lucene)",
+      "summary": "Developed a search-engine library covering classical IR algorithms.",
+      "highlights": [
+        "Implemented BM25, Indri, learning-to-rank, and diversification in an OOP-centric Java/Lucene system."
+      ],
+      "url": ""
     }
   ]
 }

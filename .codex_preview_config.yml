@@ -1,0 +1,20 @@
+plugins:
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-tabs
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+
+external_sources: []
+
+jekyll-archives:

@@ -1,9 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ACL":
+  url: https://2024.aclweb.org/
+  color: "#ff8a64"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ArXiv":
+  url: https://arxiv.org/
+  color: "#243b53"
 
-"Vision":
-  color: "#009f36"
+"EMNLP":
+  url: https://2024.emnlp.org/
+  color: "#4cb89a"
+
+"Findings":
+  url: https://aclanthology.org/venues.findings/
+  color: "#f2b24b"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#20324f"
+
+"ICLR WS":
+  url: https://data-for-foundation-models.github.io/iclr2026/
+  color: "#ffb36a"

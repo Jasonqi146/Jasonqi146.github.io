@@ -2,24 +2,42 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Research engineer for agentic RL, alignment, and the systems that make model research iterate.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: jason-headshot.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Research Scientist, Snorkel AI</p>
+    <p>San Francisco, CA</p>
+    <p><a href="mailto:jasonqi146@gmail.com">jasonqi146@gmail.com</a></p>
+    <p><a href="/cv/">CV</a> | <a href="/assets/pdf/zhengyang_qi_resume.pdf">Resume</a></p>
+    <p><a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ">Google Scholar</a> | <a href="https://github.com/Jasonqi146">GitHub</a></p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a research engineer working at the intersection of agentic RL, human value alignment, training systems, evaluation, and data pipelines. I am especially interested in the part of research work that turns a promising direction into something we can train, measure, and iterate on reliably.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Most of my recent work sits around post-training and agentic systems. I focus on the levers that actually change model quality: rollout efficiency, evaluation fidelity, training throughput, system reliability, and the data cleaning and curation loops that feed better supervision back into the model.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I was a machine learning research engineer at Scale AI, where I worked on LLM judges, scalable oversight, and rubric-driven quality control for RLHF pipelines. Before that, I interned at Intuit on tax automation and multimodal ML systems, and co-founded Kiwi, where I built ranking and data infrastructure for retail recommendation. I hold an M.S. in Intelligent Information Systems from Carnegie Mellon University and a dual-degree B.S. in Computer Science and B.A. in Mathematics and Economics from Georgia Tech and Emory.
+
+<hr>
+
+<div class="home-section">
+  <h2>Research focus</h2>
+  <p><strong>Agentic RL.</strong> I work on rollout-heavy RL systems, long-horizon environments, and evaluation loops that raise agent performance in realistic tasks.</p>
+  <p><strong>Human value alignment.</strong> I work on reward models, rubrics, scalable oversight, and curated supervision pipelines that keep optimization pointed at human-relevant outcomes.</p>
+  <p><strong>Training, evaluation, and data systems.</strong> A recurring pattern in my work is taking workflows that begin as brittle prototypes or single-node experiments and turning them into systems that support larger-scale experimentation, cleaner evaluation, and faster iteration.</p>
+</div>
+
+<hr>
+
+<div class="home-section home-links">
+  <h2>More</h2>
+  <p><a href="/publications/">Publications</a> | <a href="/projects/">Projects</a> | <a href="/cv/">CV</a> | <a href="/assets/pdf/zhengyang_qi_resume.pdf">Resume PDF</a></p>
+</div>
