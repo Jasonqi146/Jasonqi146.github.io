@@ -1,11 +1,10 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
+title: resume
 nav: true
-nav_order: 5
-cv_pdf: zhengyang_qi_resume.pdf
-description: Structured resume data plus a direct PDF download.
-toc:
-  sidebar: left
+nav_order: 6
+redirect: /assets/pdf/zhengyang_qi_resume.pdf
 ---
+
+<p><a href="/assets/pdf/zhengyang_qi_resume.pdf">Open resume PDF</a></p>

@@ -10,16 +10,20 @@
     <p class="project-entry-meta">{{ project.eyebrow | default: project.category }}</p>
   {% endif %}
   <p class="project-entry-summary">{{ project.description }}</p>
-  {% if project.highlight %}
-    <p class="project-entry-highlight"><strong>Highlight:</strong> {{ project.highlight }}</p>
-  {% endif %}
-  {% if project.stack %}
-    <p class="project-entry-stack">
-      <strong>Tools:</strong>
-      {% for item in project.stack %}
-        {{ item }}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </p>
+  {% if project.highlight or project.stack %}
+    <div class="page-greybox project-entry-note">
+    {% if project.highlight %}
+      <p class="project-entry-highlight"><strong>Highlight:</strong> {{ project.highlight }}</p>
+    {% endif %}
+    {% if project.stack %}
+      <p class="project-entry-stack">
+        <strong>Skills:</strong>
+        {% for item in project.stack %}
+          {{ item }}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+    {% endif %}
+    </div>
   {% endif %}
   <p class="project-entry-links">
     <a href="{{ project_href }}">{% if project.redirect %}Website{% else %}Read more{% endif %}</a>

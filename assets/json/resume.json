@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Zhengyang Qi",
-    "label": "Research Scientist",
+    "label": "Senior Research Scientist",
     "image": "",
     "email": "jasonqi146@gmail.com",
     "phone": "404-797-9976",
     "url": "https://jasonqi146.github.io",
-    "summary": "Research engineer working at the intersection of agentic RL, alignment, training systems, and evaluation. I turn brittle research workflows into scalable training, evaluation, and data capability for frontier models.",
+    "summary": "Post-training and evaluation researcher building feedback systems, agentic RL infrastructure, rubrics, and environments for complex AI systems.",
     "location": {
       "city": "San Francisco",
       "region": "California",
@@ -22,13 +22,18 @@
         "network": "Google Scholar",
         "username": "qc6CJjYAAAAJ",
         "url": "https://scholar.google.com/citations?user=qc6CJjYAAAAJ"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "zhengyang-jason-qi",
+        "url": "https://www.linkedin.com/in/zhengyang-jason-qi/"
       }
     ]
   },
   "work": [
     {
       "name": "Snorkel AI",
-      "position": "Research Scientist",
+      "position": "Senior Research Scientist",
       "url": "https://snorkel.ai",
       "location": "San Francisco, CA",
       "startDate": "2025-09-01",
@@ -129,50 +134,57 @@
       "name": "RIFT: A Rubric Failure Mode Taxonomy and Automated Diagnostics",
       "publisher": "ICLR 2026 Data Problems for Foundation Models Workshop",
       "releaseDate": "2026-01-01",
-      "url": "",
-      "summary": "With Charles Dikens, Derek Pham, Amanda Dsouza, Armin Parchami, Fred Sala, and Paroma Varma."
+      "url": "https://openreview.net/forum?id=tCxZYDLvuu",
+      "summary": "With Charles Dickens, Derek Pham, Amanda Dsouza, Armin Parchami, Fred Sala, and Paroma Varma."
     },
     {
-      "name": "BeTaL: Adaptive Benchmarking with LLM-Guided Environment Design",
-      "publisher": "ICML 2026 (under review)",
-      "releaseDate": "2026-01-01",
-      "url": "",
+      "name": "Automating Benchmark Design",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2025-10-28",
+      "url": "https://arxiv.org/abs/2510.25039",
       "summary": "With Amanda Dsouza, Harit Vishwakarma, Justin Bauer, Derek Pham, Tom Walshe, Armin Parchami, Fred Sala, and Paroma Varma."
     },
     {
       "name": "Sotopia-RL: Reward Design For Social Intelligence",
-      "publisher": "ICML 2026 (under review)",
-      "releaseDate": "2026-01-01",
-      "url": "",
-      "summary": "With Haofei Yu, Yining Zhao, Keyang Xuan, Kolby Nottingham, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, and Jiaxuan You."
+      "publisher": "arXiv preprint",
+      "releaseDate": "2025-08-05",
+      "url": "https://arxiv.org/abs/2508.03905",
+      "summary": "Zhengyang Qi*, Haofei Yu*, Yining Zhao*, Kolby Nottingham, Keyang Xuan, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, and Jiaxuan You. * Equal contribution."
     },
     {
       "name": "MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction Experts",
       "publisher": "EMNLP 2024 Main Conference",
       "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "With Haofei Yu, Lawrence Jang, Ruslan Salakhutdinov, Louis-Philippe Morency, and Paul Pu Liang."
+      "url": "https://aclanthology.org/2024.emnlp-main.558/",
+      "summary": "Haofei Yu*, Zhengyang Qi*, Lawrence Jang*, Ruslan Salakhutdinov, Louis-Philippe Morency, and Paul Pu Liang. * Equal contribution."
     },
     {
       "name": "Sotopia-pi: Interactive Learning of Socially Intelligent Language Agents",
       "publisher": "ACL 2024 Main Conference",
       "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "With Ruiyi Wang, Haofei Yu, Wenxin Zhang, Maarten Sap, Graham Neubig, Yonatan Bisk, and Hao Zhu."
+      "url": "https://aclanthology.org/2024.acl-long.698/",
+      "summary": "Ruiyi Wang*, Haofei Yu*, Wenxin Zhang*, Zhengyang Qi*, Maarten Sap, Graham Neubig, Yonatan Bisk, and Hao Zhu. * Equal contribution."
     },
     {
       "name": "Sotopia: Interactive Evaluation for Social Intelligence in Language Agents",
       "publisher": "ICLR 2024 Spotlight",
       "releaseDate": "2024-01-01",
-      "url": "",
+      "url": "https://openreview.net/forum?id=mM7VurbA4r",
       "summary": "With Xuhui Zhu, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, and Maarten Sap."
     },
     {
       "name": "Long-Horizon Dialogue State Tracking for Role Identification in the Game of Avalon with Large Language Models",
       "publisher": "Findings of EMNLP 2023",
       "releaseDate": "2023-01-01",
-      "url": "",
+      "url": "https://aclanthology.org/2023.findings-emnlp.748/",
       "summary": "With Simon Stepputtis, Joseph Campbell, Yaqi Xie, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Michael Lewis, and Katia P. Sycara."
+    },
+    {
+      "name": "Understanding People's Needs in Viewing Diverse Social Opinions about Controversial Topics",
+      "publisher": "IEEE Pacific Visualization Symposium 2023",
+      "releaseDate": "2023-04-18",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10148312",
+      "summary": "With Hayeong Song, John Stasko, and Diyi Yang."
     }
   ],
   "skills": [

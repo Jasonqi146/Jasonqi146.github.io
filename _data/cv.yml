@@ -2,96 +2,195 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Zhengyang "Jason" Qi
+    - name: Role
+      value: Senior Research Scientist, Snorkel AI
+    - name: Location
+      value: San Francisco, CA
+    - name: Email
+      value: <a href="mailto:jasonqi146@gmail.com">jasonqi146@gmail.com</a>
+    - name: Links
+      value: <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ">Google Scholar</a> / <a href="https://github.com/Jasonqi146">GitHub</a> / <a href="https://www.linkedin.com/in/zhengyang-jason-qi/">LinkedIn</a>
 
-- title: Education
-  type: time_table
+- title: Research Focus
+  type: nested_list
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Post-training and agentic RL
+      items:
+        - Reinforcement learning for terminal and coding agents with GRPO, reward design, LLM-as-judge feedback, and environment data selection.
+        - Distributed rollout infrastructure for long-horizon agents and large-scale training loops.
+    - title: Evaluation and scalable oversight
+      items:
+        - Rubric design, rubric failure-mode diagnostics, reward-model evaluation, human-AI oversight, and preference pipelines.
+        - Benchmarks and interactive environments for coding agents, computer-use agents, clinical AI, social intelligence, and long-context reasoning.
+    - title: Complex systems taste
+      items:
+        - I study systems where behavior emerges through feedback: agents, social interaction, human judgment, and professional workflows.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior Research Scientist
+      institution: Snorkel AI
+      location: San Francisco, CA
+      year: Sep 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Led RL post-training for terminal-based coding agents using GRPO, improving Terminal Bench 2.0 resolution rate from 5.6% to 13.4%.
+        - Built a multi-node agentic RL training backbone with Ray, Kubernetes, verl-style training, and containerized rollouts across 64 H200 GPUs and 6,000+ rollout environments.
+        - Curated multiturn human-preference and rubric pipelines for frontier coding agents, computer-use agents in EDA workflows, and clinical conversational agents.
+        - Scaled synthetic trajectory and distillation pipelines with rejection sampling for multi-step environment grounding.
+    - title: Machine Learning Research Engineer
+      institution: Scale AI
+      location: San Francisco, CA
+      year: Aug 2024 - Aug 2025
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Led SFT and GRPO post-training for LLM judge and reward models, including 60k+ evaluation examples and 300k+ training examples across multilingual, instruction following, multimodal reasoning, STEM, and coding capabilities.
+        - Delivered a production reward judge model that outperformed GPT-4o on reward and preference alignment.
+        - Built scalable oversight systems, automated rating services, and A/B-tested metrics for human-AI data pipelines, reducing human labeling reliance by up to 60%.
+        - Developed quality-control agents for RLHF rubric pipelines using RAG, tool use, and multi-agent debate.
+    - title: Software Engineer, Machine Learning Intern
+      institution: Intuit
+      location: San Diego, CA
+      year: May 2023 - Aug 2023
       description:
+        - Built ML microservices to identify redundant data across 1k+ variations of tax forms for 42M users using GPT-3.5, XGBoost, and Spring Boot.
+    - title: Software Engineer, Machine Learning Intern
+      institution: Intuit
+      location: Remote
+      year: Jun 2022 - Aug 2022
+      description:
+        - Built multimodal image-captioning systems with GPT, CLIP, Spark, CUDA, and PyTorch FSDP, reducing model size by 68% and inference latency by 82%.
+    - title: Co-Founder and Machine Learning Engineer
+      institution: Kiwi
+      location: Atlanta, GA
+      year: Dec 2020 - Dec 2021
+      description:
+        - Led a three-engineer team building multimodal recommendation and data pipelines across 18 retailers, automating 100k+ item acquisition and improving entity matching by 64% over baseline.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: M.S. in Intelligent Information Systems
+      institution: Carnegie Mellon University, School of Computer Science
+      location: Pittsburgh, PA
+      year: Aug 2022 - May 2024
+      description:
+        - GPA 3.84/4.30
+    - title: B.S. in Computer Science; B.A. in Mathematics and Economics
+      institution: Georgia Institute of Technology and Emory University, Dual Degree Program
+      location: Atlanta, GA
+      year: Aug 2017 - May 2022
+      description:
+        - GPA 3.92/4.00
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: "RIFT: A RubrIc Failure Mode Taxonomy and Automated Diagnostics"
+      institution: Data Problems for Foundation Models Workshop at ICLR 2026
+      year: 2026
+      description:
+        - Zhengyang Qi, Charles Andrew Dickens, Derek Pham, Amanda Dsouza, Armin Parchami, Frederic Sala, Paroma Varma.
+      linkitems:
+        - linkname: openreview
+          link: https://openreview.net/forum?id=tCxZYDLvuu
+        - linkname: arxiv
+          link: https://arxiv.org/abs/2604.01375
+    - title: Automating Benchmark Design
+      institution: arXiv preprint
+      year: 2025
+      description:
+        - Amanda Dsouza, Harit Vishwakarma, Zhengyang Qi, Justin Bauer, Derek Pham, Thomas Walshe, Armin Parchami, Frederic Sala, Paroma Varma.
+      linkitems:
+        - linkname: arxiv
+          link: https://arxiv.org/abs/2510.25039
+        - linkname: openreview
+          link: https://openreview.net/forum?id=efAANptQmt
+    - title: "Sotopia-RL: Reward Design for Social Intelligence"
+      institution: arXiv preprint
+      year: 2025
+      description:
+        - Zhengyang Qi*, Haofei Yu*, Yining Zhao*, Kolby Nottingham, Keyang Xuan, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, Jiaxuan You.
+        - "* Equal contribution."
+      linkitems:
+        - linkname: arxiv
+          link: https://arxiv.org/abs/2508.03905
+    - title: "MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction Experts"
+      institution: EMNLP 2024 Main Conference
+      year: 2024
+      description:
+        - Haofei Yu*, Zhengyang Qi*, Lawrence Keunho Jang*, Ruslan Salakhutdinov, Louis-Philippe Morency, Paul Pu Liang.
+        - "* Equal contribution."
+      linkitems:
+        - linkname: paper
+          link: https://aclanthology.org/2024.emnlp-main.558/
+    - title: "SOTOPIA-pi: Interactive Learning of Socially Intelligent Language Agents"
+      institution: ACL 2024 Main Conference
+      year: 2024
+      description:
+        - Ruiyi Wang*, Haofei Yu*, Wenxin Zhang*, Zhengyang Qi*, Maarten Sap, Yonatan Bisk, Graham Neubig, Hao Zhu.
+        - "* Equal contribution."
+      linkitems:
+        - linkname: paper
+          link: https://aclanthology.org/2024.acl-long.698/
+    - title: "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+      institution: ICLR 2024 Spotlight
+      year: 2024
+      description:
+        - Xuhui Zhou, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Zhengyang Qi, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, Maarten Sap.
+      linkitems:
+        - linkname: openreview
+          link: https://openreview.net/forum?id=mM7VurbA4r
+        - linkname: arxiv
+          link: https://arxiv.org/abs/2310.11667
+    - title: Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models
+      institution: Findings of EMNLP 2023
+      year: 2023
+      description:
+        - Simon Stepputtis, Joseph Campbell, Yaqi Xie, Zhengyang Qi, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Michael Lewis, Katia P. Sycara.
+      linkitems:
+        - linkname: paper
+          link: https://aclanthology.org/2023.findings-emnlp.748/
+        - linkname: video
+          link: https://aclanthology.org/2023.findings-emnlp.748.mp4
+    - title: "Understanding People's Needs in Viewing Diverse Social Opinions about Controversial Topics"
+      institution: IEEE Pacific Visualization Symposium 2023
+      year: 2023
+      description:
+        - Hayeong Song, Zhengyang Qi, John Stasko, Diyi Yang.
+      linkitems:
+        - linkname: paper
+          link: https://ieeexplore.ieee.org/abstract/document/10148312
 
-- title: Academic Interests
+- title: Projects
+  type: time_table
+  contents:
+    - title: Chinese FLAN-T5
+      year: Open Source
+      description:
+        - Contributed 20+ pipelines for instruction-following LLMs in Chinese and eight additional languages.
+    - title: Amex Default Prediction
+      year: Kaggle
+      description:
+        - Built ensemble models and advanced feature engineering for a top 1.6% competition finish.
+    - title: Distributed Systems
+      year: Go
+      description:
+        - Implemented reliable UDP networking, RAFT consensus, and an actor-model system for multi-user state management.
+    - title: Search Engine Systems
+      year: Java/Lucene
+      description:
+        - Developed a search-engine library implementing BM25, Indri, learning-to-rank, and diversification.
+
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, C++, Go, Java, TypeScript, SQL, Unix shell.
+    - title: ML and systems
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - PyTorch, Ray, vLLM, SGLang, Triton, CUDA, FSDP, DeepSpeed, Spark, Kubernetes.
+    - title: Frontier AI
+      items:
+        - RLHF/RLAIF, PPO, GRPO, DPO, ReST, reward modeling, rubrics, scalable oversight, synthetic data, test-time compute, chain-of-thought, multimodal models.
