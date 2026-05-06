@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Jasonqi146.github.io/sitemap.xml
+Sitemap: https://jasonqi146.github.io/sitemap.xml
