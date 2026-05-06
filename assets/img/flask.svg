@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="chemical flask">
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
+  <path d="M25 8h14v6h-3v13l14 23c1.7 2.8-.3 6-3.6 6H17.6c-3.3 0-5.3-3.2-3.6-6l14-23V14h-3z" fill="none" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M21 45h22l5 8H16z" fill="#1772d0"/>
+  <path d="M21 45c3.4-2.4 6.8 2.4 10.2 0s6.8-2.4 11.8 0" fill="none" stroke="#1772d0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M25 14h14" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+</svg>
