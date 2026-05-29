@@ -70,13 +70,17 @@ hr {
 }
 
 #navbar {
-  padding: 1.25rem 0 0.5rem;
+  position: relative;
+  padding: 1.15rem 0 0.8rem;
   border: 0;
-  background: #ffffff;
+  border-bottom: 1px solid #eef1f4;
+  background: rgba(255, 255, 255, 0.98);
   box-shadow: none;
 }
 
 #navbar .container {
+  display: flex;
+  justify-content: flex-start;
   padding: 0 1.25rem;
 }
 
@@ -90,26 +94,88 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap !important;
-  gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem 1.35rem;
+  margin-left: 0 !important;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 #navbar .navbar-collapse {
-  display: block !important;
+  display: flex !important;
   flex-basis: auto;
+  justify-content: flex-start;
   min-width: 0;
 }
 
 #navbar .nav-link {
-  padding: 0 0.55rem !important;
-  color: #1772d0 !important;
-  font-size: 1rem;
-  font-weight: 400;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.9rem;
+  padding: 0.1rem 0 !important;
+  border-radius: 0;
+  color: #536170 !important;
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-rendering: geometricPrecision;
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+#navbar .nav-link::after {
+  content: none;
 }
 
 #navbar .nav-item.active .nav-link,
 #navbar .nav-link:hover {
-  color: #f09228 !important;
+  color: #111111 !important;
   background: transparent;
+  box-shadow: none;
+}
+
+#navbar .nav-item.active .nav-link {
+  font-weight: 700;
+}
+
+#navbar .nav-link:hover {
+  opacity: 0.86;
+}
+
+#navbar .nav-link:focus-visible {
+  border-radius: 0.2rem;
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(29, 101, 183, 0.16);
+}
+
+@media (max-width: 760px) {
+  #navbar {
+    padding-top: 0.9rem;
+  }
+
+  #navbar .container {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  #navbar .navbar-nav {
+    gap: 0.15rem 0.9rem;
+  }
+
+  #navbar .nav-link {
+    min-height: 1.85rem;
+    padding: 0.1rem 0 !important;
+    font-size: 0.88rem;
+  }
 }
 
 .navbar-toggler,
@@ -149,14 +215,22 @@ footer {
 }
 
 .about-page .post-header {
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
   text-align: center;
 }
 
 .about-page .post-title {
   max-width: none;
   margin-bottom: 0.25rem;
+  color: #111111;
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
   font-size: 2.05rem;
+  font-weight: 600;
   line-height: 1.1;
+}
+
+.about-page .post-title .font-weight-bold {
+  font-weight: 600 !important;
 }
 
 .name-swap {
@@ -200,7 +274,8 @@ footer {
   max-width: 36rem;
   margin: 0 auto;
   color: #666666;
-  font-size: 15px;
+  font-family: "IBM Plex Mono", "Titillium Web", Verdana, Helvetica, sans-serif;
+  font-size: 0.82rem;
   line-height: 1.45;
 }
 
@@ -250,7 +325,7 @@ footer {
   padding: 0;
   border: 0;
   color: #111111;
-  font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
   font-size: 15px;
   letter-spacing: 0;
   text-align: center;
@@ -286,6 +361,7 @@ footer {
 }
 
 .about-page .about-content {
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
   min-width: 0;
   max-width: 100%;
 }
@@ -293,8 +369,27 @@ footer {
 .about-page .about-content > p {
   max-width: none;
   margin-bottom: 1rem;
-  font-size: 16px;
-  line-height: 1.55;
+  color: #111111;
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+.about-page .about-content strong {
+  font-weight: 800;
+}
+
+.about-page .home-section h2,
+.about-page .home-section h3 {
+  font-family: "Nunito Sans", "Titillium Web", Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.about-page .home-section h2 {
+  font-size: 22px;
+}
+
+.about-page .home-section h3 {
+  font-size: 18px;
 }
 
 .home-section {
@@ -677,7 +772,8 @@ footer {
   }
 
   #navbar .container {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
@@ -688,17 +784,20 @@ footer {
   }
 
   #navbar .navbar-nav {
+    gap: 0.15rem 0.9rem;
     justify-content: flex-start;
+    max-width: 100%;
   }
 
   #navbar .navbar-collapse {
     width: 100%;
+    justify-content: flex-start;
   }
 
   #navbar .nav-link {
-    padding-left: 0.42rem !important;
-    padding-right: 0.42rem !important;
-    font-size: 15px;
+    min-height: 1.75rem;
+    padding: 0.1rem 0 !important;
+    font-size: 0.88rem;
   }
 
   .post {
