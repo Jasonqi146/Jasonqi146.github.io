@@ -41,7 +41,7 @@ introduction: >
     <article class="experience-entry collaboration-entry">
       <h3>Research collaborations</h3>
       <p>My work includes human behavioral simulation through macro2mind, social learning and evaluation through SOTOPIA, SOTOPIA-π, and Sotopia-RL, and agent evaluation through BeTaL, RIFT, and OSWorld 2.0.</p>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">View all publications <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="/publications/">View all publications <span aria-hidden="true">↗</span></a>
     </article>
   </div>
 </section>
