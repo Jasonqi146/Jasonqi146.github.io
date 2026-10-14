@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Zhengyang Qi",
-    "label": "Senior Research Scientist",
+    "name": "Zhengyang (Jason) Qi",
+    "label": "Founding Research Scientist, Listen Labs",
     "image": "",
     "email": "jasonqi146@gmail.com",
     "phone": "404-797-9976",
     "url": "https://jasonqi146.github.io",
-    "summary": "Post-training and evaluation researcher building feedback systems, agentic RL infrastructure, rubrics, and environments for complex AI systems.",
+    "summary": "Zhengyang (Jason) Qi is a Founding Research Scientist at Listen Labs. His recent research explores how people reason, make decisions, and form expectations about the future, and how mid-training and reinforcement learning can help language models simulate these processes. He focuses on scaling these simulations across diverse individuals and situations, and on building realistic human simulators for training and evaluating long-horizon agents. Previously, he worked at Snorkel AI and Scale AI. He holds an M.S. in Intelligent Information Systems from Carnegie Mellon University and undergraduate degrees from Georgia Tech and Emory University.",
     "location": {
       "city": "San Francisco",
       "region": "California",
@@ -20,8 +20,8 @@
       },
       {
         "network": "Google Scholar",
-        "username": "qc6CJjYAAAAJ",
-        "url": "https://scholar.google.com/citations?user=qc6CJjYAAAAJ"
+        "username": "MpjZP1oAAAAJ",
+        "url": "https://scholar.google.com/citations?user=MpjZP1oAAAAJ&hl=en"
       },
       {
         "network": "LinkedIn",
@@ -32,208 +32,290 @@
   },
   "work": [
     {
-      "name": "Snorkel AI",
-      "position": "Senior Research Scientist",
-      "url": "https://snorkel.ai",
-      "location": "San Francisco, CA",
-      "startDate": "2025-09-01",
+      "name": "Listen Labs",
+      "position": "Founding Research Scientist",
+      "location": "San Francisco Bay Area",
+      "startDate": "2026-09",
       "endDate": "",
-      "summary": "Post-training frontier language models and building evaluation environments for agentic systems.",
       "highlights": [
-        "Led GRPO post-training for LLM-based terminal coding agents on internal Terminal Bench tasks, scaled synthetic mid-training trajectory generation, and improved task success 2.2x from 5.6% to 13.4% on Qwen-3 models.",
-        "Built agentic RL systems from scratch with verl, Ray-based training frameworks, AWS and Kubernetes cluster management, and distributed rollout infrastructure spanning 64 H200 GPUs.",
-        "Designed and built 50+ professional computer-use tasks and environments for visual agents, covering complex interface grounding, long-context behavior, and test-time compute in circuit design workflows.",
-        "Designed rubric-based and preference-based human annotation pipelines for medical conversational agents and prototyped 40k+ context synthetic data generation via EHR simulation."
+        "Build longitudinal representations of human context that capture how people's experiences, preferences, and expectations evolve over time and shape their decisions.",
+        "Develop reinforcement learning methods for post-training language models to simulate human reasoning and decision-making across diverse individuals and situations.",
+        "Scale human simulation models to support realistic behavioral modeling and the training and evaluation of long-horizon agents."
+      ]
+    },
+    {
+      "name": "Snorkel AI",
+      "position": "Senior Research Scientist, Agent RL & Evaluation Research",
+      "location": "San Francisco, CA",
+      "startDate": "2025-09",
+      "endDate": "2026-09",
+      "highlights": [
+        "Designed and ran task curation and verification pipelines for SWE-Bench Pro, Terminal-Bench 2.0, OSWorld 2.0, PostTrainBench, and EDA computer-use agent tasks, spanning synthetic environment generation, verifier-validity checks, and LLM-as-judge and rubric-based review; delivered agent-task datasets, frontier coding-agent preference evaluations, and clinical-agent rubrics.",
+        "Researched reward hacking, verifier validity, and rubric failure modes in agent environments and evaluation pipelines to improve data quality; built RIFT (ICLR 2026 workshop), a rubric failure-mode taxonomy and automated diagnostics for auditing evaluation and reward signals.",
+        "Single-handedly built the company's agentic RL training stack on verl and Kubernetes: asynchronous, fault-tolerant rollout workers, sandboxed terminal-environment execution, and multi-node training on 64 H200 GPUs with Ray, Megatron, and SGLang.",
+        "Trained long-horizon terminal agents with GRPO, improving Terminal-Bench 2.0 from 5.6% to 13.4% (Qwen3-32B) and from 36% to 41% (Qwen3.5-27B) through environment selection, reward attribution with partial-credit assignment, rejection sampling, and on-policy distillation.",
+        "Published on automated benchmark design and milestone-based evaluation for RL; advised research direction and environment/task design for OSWorld 2.0."
       ]
     },
     {
       "name": "Scale AI",
       "position": "Machine Learning Research Engineer",
-      "url": "https://scale.com",
       "location": "San Francisco, CA",
-      "startDate": "2024-08-01",
-      "endDate": "2025-08-01",
-      "summary": "Post-trained LLM judges and built scalable oversight systems for human-AI data pipelines.",
+      "startDate": "2024-08",
+      "endDate": "2025-08",
       "highlights": [
-        "Led post-training for LLM judge models with SFT and GRPO, curated 60k+ frontier-capability datasets, and delivered a production reward judge model that outperformed GPT-4o in reward and preference alignment.",
-        "Built production auto-evaluation and scalable oversight systems with multi-agent debate, context management, and reliable A/B-tested metrics, reducing human labeling reliance by up to 60%.",
-        "Developed automated quality control agents for RLHF rubric pipelines via RAG, tool use, and multi-agent debate, consistently improving over baseline heuristics."
+        "Led post-training of multimodal LLM judge and reward models with reasoning RL and RLHF (SFT, GRPO, and human preference supervision), curating 60k+ evaluation and 300k+ training examples across multilingual instruction following, multimodal reasoning, STEM, and coding; the production judge outperformed GPT-4o on human reward and preference alignment.",
+        "Built an agentic auto-evaluation system for scalable oversight of human--AI data-generation pipelines; deployed on 10+ production pipelines, cutting human labeling cost by up to 60% while preserving calibration and human-judgment quality.",
+        "Built automated quality-control agents for RLHF rubric pipelines (RAG, tool use, multi-agent debate), outperforming baseline agents across deployments."
+      ]
+    },
+    {
+      "name": "Carnegie Mellon University, Language Technologies Institute",
+      "position": "Graduate Research Assistant; advisor: Prof. Graham Neubig",
+      "location": "Pittsburgh, PA",
+      "startDate": "2022-08",
+      "endDate": "2024-05",
+      "highlights": [
+        "Researched interactive evaluation, social intelligence, multimodal ML, and reinforcement learning for language agents; co-built the SOTOPIA interactive evaluation platform (ICLR 2024 Spotlight) and the SOTOPIA-π self-play and self-reinforcement training pipeline, leading to publications at ICLR, ACL, and EMNLP.",
+        "Built research systems and datasets for simulated social environments, rubric-based evaluation, self-play training, multimodal interaction modeling (MMoE), and long-horizon dialogue understanding (Avalon)."
+      ]
+    },
+    {
+      "name": "Georgia Institute of Technology and Emory University",
+      "position": "Undergraduate Researcher; advisors: Prof. Diyi Yang and Prof. Xu Chu",
+      "location": "Atlanta, GA",
+      "startDate": "2017-08",
+      "endDate": "2022-05",
+      "highlights": [
+        "Conducted research in social computing, NLP, and data-centric ML; published a user study of how Reddit users navigate controversial discussions, with design implications for diverse-opinion interfaces (IEEE PacificVis 2023)."
       ]
     },
     {
       "name": "Intuit",
-      "position": "Software Engineer (Machine Learning) Intern",
-      "url": "https://www.intuit.com",
-      "location": "San Diego, CA",
-      "startDate": "2023-05-01",
-      "endDate": "2023-08-01",
-      "summary": "Built ML microservices for tax form understanding and automation.",
+      "position": "Software Engineer Intern, Machine Learning",
+      "location": "",
+      "startDate": "2023-05",
+      "endDate": "2023-08",
       "highlights": [
-        "Designed and implemented scalable ML microservices to identify redundant data across 1k+ variations of tax forms for 42M users, integrating GPT-3.5, XGBoost, and Spring Boot."
+        "Built LLM and ML services for TurboTax tax-form de-duplication across 1k+ form variations, supporting large-scale filing workflows for 42M users."
       ]
     },
     {
       "name": "Intuit",
-      "position": "Software Engineer (Machine Learning) Intern",
-      "url": "https://www.intuit.com",
-      "location": "Remote",
-      "startDate": "2022-06-01",
-      "endDate": "2022-08-01",
-      "summary": "Built multimodal inference pipelines and optimized large-scale image processing systems.",
+      "position": "Software Engineer Intern, Machine Learning",
+      "location": "",
+      "startDate": "2022-06",
+      "endDate": "2022-08",
       "highlights": [
-        "Constructed an image captioning model with GPT-2/3 and CLIP, built a Spark pipeline for 70k+ images, reduced model size by 68%, and cut inference latency by 82% with CUDA and PyTorch FSDP."
+        "Built multimodal image-captioning and large-batch inference pipelines for corporate media management, including Spark data processing and CUDA/PyTorch optimization."
       ]
     },
     {
       "name": "Kiwi",
-      "position": "Co-Founder & Machine Learning Engineer",
-      "url": "",
-      "location": "Atlanta, GA",
-      "startDate": "2020-12-01",
-      "endDate": "2021-12-01",
-      "summary": "Built recommendation and data infrastructure for a retail startup.",
+      "position": "Co-Founder and Machine Learning Engineer",
+      "location": "",
+      "startDate": "2020-12",
+      "endDate": "2021-12",
       "highlights": [
-        "Led a three-engineer team building a multimodal recommender system across 18 retailers, automated acquisition of 100k+ items, and achieved a 64% improvement over baseline on entity matching with XGBoost and LightGBM."
+        "Led development of a fashion recommendation and entity-matching system using text, image, and metadata from 18 retailer websites."
       ]
+    },
+    {
+      "name": "EPI-USE America, Inc.",
+      "position": "Innovation Engineer Intern",
+      "location": "Atlanta, Georgia, United States",
+      "startDate": "2021-06",
+      "endDate": "2021-08",
+      "highlights": [
+        "Implemented a graphical interface for interactive visualization of information networks for client.",
+        "Built a BERT classifier for privacy leakage detection, replacing 8+ hrs/week human labor."
+      ]
+    },
+    {
+      "name": "TechX Academy",
+      "position": "Assistant Virtual Reality Instructor",
+      "location": "Shanghai, China",
+      "startDate": "2017-07",
+      "endDate": "2017-08",
+      "highlights": []
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "Carnegie Mellon University",
-      "location": "Pittsburgh, PA",
-      "url": "https://www.cmu.edu",
-      "area": "Intelligent Information Systems",
-      "studyType": "M.S.",
-      "startDate": "2022-08-01",
-      "endDate": "2024-05-01",
-      "score": "3.84/4.00",
+      "institution": "Carnegie Mellon University, School of Computer Science",
+      "area": "M.S. in Intelligent Information Systems, Language Technologies Institute",
+      "startDate": "2022-08",
+      "endDate": "2024-05",
       "courses": [
-        "School of Computer Science",
-        "GPA: 3.84/4.00"
+        "Research: RL for language agents, social intelligence, and multimodal ML; advisor: Prof. Graham Neubig."
       ]
     },
     {
-      "institution": "Georgia Institute of Technology and Emory University",
-      "location": "Atlanta, GA",
-      "url": "",
-      "area": "Dual Degree Program",
-      "studyType": "B.S. in Computer Science, B.A. in Mathematics and Economics",
-      "startDate": "2017-08-01",
-      "endDate": "2022-05-01",
-      "score": "3.92/4.00",
-      "courses": [
-        "GPA: 3.92/4.00"
-      ]
+      "institution": "Georgia Institute of Technology and Emory University, Dual Degree Program",
+      "area": "B.S. in Computer Science; B.A. in Mathematics and Economics",
+      "startDate": "2017-08",
+      "endDate": "2022-05",
+      "courses": []
     }
   ],
-  "awards": [],
+  "awards": [
+    {
+      "title": "ICML 2026 Silver Reviewer Award",
+      "date": "2026",
+      "awarder": "International Conference on Machine Learning",
+      "summary": "ICML 2026 Silver Reviewer Award. International Conference on Machine Learning, 2026."
+    },
+    {
+      "title": "CMU RISE Scholarship",
+      "date": "2023",
+      "awarder": "Carnegie Mellon University",
+      "summary": "CMU RISE Scholarship ($5k research award). Carnegie Mellon University, 2023."
+    },
+    {
+      "title": "Top 1.6% Placement, Amex Default Prediction",
+      "date": "2022",
+      "awarder": "Kaggle",
+      "summary": "Top 1.6% Placement, Amex Default Prediction. Kaggle; ensemble modeling and feature engineering, 2022."
+    }
+  ],
   "certificates": [],
   "publications": [
     {
+      "name": "Learning to Simulate Individuals from Macro Social Signals",
+      "publisher": "arXiv preprint arXiv:2610.07062, 2026",
+      "releaseDate": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.07062",
+      "summary": "Introduces macro2mind, which uses GRPO with prediction-market signals to learn behavioral reasoning that transfers to individual simulation."
+    },
+    {
       "name": "RIFT: A Rubric Failure Mode Taxonomy and Automated Diagnostics",
-      "publisher": "ICLR 2026 Data Problems for Foundation Models Workshop",
-      "releaseDate": "2026-01-01",
+      "publisher": "ICLR 2026 Data Problems for Foundation Models Workshop, 2026",
+      "releaseDate": "2026",
       "url": "https://openreview.net/forum?id=tCxZYDLvuu",
-      "summary": "With Charles Dickens, Derek Pham, Amanda Dsouza, Armin Parchami, Fred Sala, and Paroma Varma."
+      "summary": "Introduces a taxonomy and automated diagnostics for detecting rubric failure modes before they corrupt evaluation or reward signals"
+    },
+    {
+      "name": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "publisher": "arXiv preprint, 2026",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2606.29537",
+      "summary": "A benchmark of long-horizon, real-world computer-use tasks with verifiable end-state evaluation; advised project design, research direction, and paper writing"
     },
     {
       "name": "Automating Benchmark Design",
-      "publisher": "arXiv preprint",
-      "releaseDate": "2025-10-28",
+      "publisher": "arXiv preprint arXiv:2510.25039, 2025",
+      "releaseDate": "2025",
       "url": "https://arxiv.org/abs/2510.25039",
-      "summary": "With Amanda Dsouza, Harit Vishwakarma, Justin Bauer, Derek Pham, Tom Walshe, Armin Parchami, Fred Sala, and Paroma Varma."
+      "summary": "Presents BeTaL, an interactive LLM-in-the-loop framework for automatically generating model-specific benchmarks across difficulty levels"
     },
     {
-      "name": "Sotopia-RL: Reward Design For Social Intelligence",
-      "publisher": "arXiv preprint",
-      "releaseDate": "2025-08-05",
+      "name": "Sotopia-RL: Reward Design for Social Intelligence",
+      "publisher": "arXiv preprint arXiv:2508.03905, 2025",
+      "releaseDate": "2025",
       "url": "https://arxiv.org/abs/2508.03905",
-      "summary": "Zhengyang Qi*, Haofei Yu*, Yining Zhao*, Kolby Nottingham, Keyang Xuan, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, and Jiaxuan You. * Equal contribution."
+      "summary": "Studies reward design, multi-signal rewards, and long-horizon credit assignment for RL training of socially intelligent language agents"
     },
     {
       "name": "MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction Experts",
-      "publisher": "EMNLP 2024 Main Conference",
-      "releaseDate": "2024-01-01",
+      "publisher": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, 2024",
+      "releaseDate": "2024",
       "url": "https://aclanthology.org/2024.emnlp-main.558/",
-      "summary": "Haofei Yu*, Zhengyang Qi*, Lawrence Jang*, Ruslan Salakhutdinov, Louis-Philippe Morency, and Paul Pu Liang. * Equal contribution."
+      "summary": "Trains specialized experts for distinct cross-modal interaction patterns to improve multimodal model performance"
     },
     {
-      "name": "Sotopia-pi: Interactive Learning of Socially Intelligent Language Agents",
-      "publisher": "ACL 2024 Main Conference",
-      "releaseDate": "2024-01-01",
+      "name": "SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents",
+      "publisher": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics, 2024",
+      "releaseDate": "2024",
       "url": "https://aclanthology.org/2024.acl-long.698/",
-      "summary": "Ruiyi Wang*, Haofei Yu*, Wenxin Zhang*, Zhengyang Qi*, Maarten Sap, Graham Neubig, Yonatan Bisk, and Hao Zhu. * Equal contribution."
+      "summary": "Improves social intelligence through interactive self-play and self-reinforcement learning"
     },
     {
-      "name": "Sotopia: Interactive Evaluation for Social Intelligence in Language Agents",
-      "publisher": "ICLR 2024 Spotlight",
-      "releaseDate": "2024-01-01",
-      "url": "https://openreview.net/forum?id=mM7VurbA4r",
-      "summary": "With Xuhui Zhu, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, and Maarten Sap."
+      "name": "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+      "publisher": "International Conference on Learning Representations, 2024. Spotlight",
+      "releaseDate": "2024",
+      "url": "https://arxiv.org/abs/2310.11667",
+      "summary": "Introduces interactive environments and rubric-based evaluation for social intelligence in language agents"
     },
     {
-      "name": "Long-Horizon Dialogue State Tracking for Role Identification in the Game of Avalon with Large Language Models",
-      "publisher": "Findings of EMNLP 2023",
-      "releaseDate": "2023-01-01",
+      "name": "Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models",
+      "publisher": "Findings of the Association for Computational Linguistics: EMNLP, 2023",
+      "releaseDate": "2023",
       "url": "https://aclanthology.org/2023.findings-emnlp.748/",
-      "summary": "With Simon Stepputtis, Joseph Campbell, Yaqi Xie, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Michael Lewis, and Katia P. Sycara."
+      "summary": "Evaluates hidden-role and deception reasoning in Avalon, showing that long-horizon social reasoning remains difficult for LLMs"
     },
     {
       "name": "Understanding People's Needs in Viewing Diverse Social Opinions about Controversial Topics",
-      "publisher": "IEEE Pacific Visualization Symposium 2023",
-      "releaseDate": "2023-04-18",
-      "url": "https://ieeexplore.ieee.org/abstract/document/10148312",
-      "summary": "With Hayeong Song, John Stasko, and Diyi Yang."
+      "publisher": "IEEE 16th Pacific Visualization Symposium, 2023",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1109/PacificVis56936.2023.00008",
+      "summary": "A user study of how people seek out and navigate diverse opinions on controversial topics, with implications for interface design"
     }
   ],
   "skills": [
     {
-      "name": "Languages",
-      "level": "",
-      "icon": "fa-solid fa-code",
+      "name": "Post-Training Data and Evaluation",
       "keywords": [
-        "Python",
-        "C++",
-        "Go",
-        "Java",
-        "TypeScript",
-        "SQL",
-        "Unix shell"
+        "RLHF/RLAIF",
+        "GRPO",
+        "PPO",
+        "DPO",
+        "SFT",
+        "reward modeling",
+        "process rewards",
+        "LLM-as-judge",
+        "rubric evaluation",
+        "scalable oversight",
+        "synthetic data generation",
+        "benchmark and environment curation",
+        "reasoning RL",
+        "multimodal models"
       ]
     },
     {
-      "name": "ML & Systems",
-      "level": "",
-      "icon": "fa-solid fa-microchip",
+      "name": "ML and Systems",
       "keywords": [
         "PyTorch",
+        "Hugging Face",
         "Ray",
+        "verl",
         "vLLM",
-        "Triton",
+        "SGLang",
         "CUDA",
-        "Distributed Training (FSDP, DeepSpeed)",
-        "Spark"
+        "Docker",
+        "AWS",
+        "Kubernetes",
+        "Spark",
+        "FSDP",
+        "Megatron",
+        "DeepSpeed"
       ]
     },
     {
-      "name": "Frontier AI",
-      "level": "",
-      "icon": "fa-solid fa-brain",
+      "name": "Programming Languages",
       "keywords": [
-        "RLHF/RLAIF (PPO, GRPO, DPO, ReST)",
-        "Rubrics",
-        "Reward Modeling",
-        "Scalable Oversight",
-        "Synthetic Data Generation",
-        "Test-Time Compute",
-        "Chain-of-Thought (CoT)",
-        "Multimodal Models"
+        "Python",
+        "Unix shell",
+        "C",
+        "C++",
+        "SQL",
+        "JavaScript",
+        "Java"
       ]
     }
   ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research interests",
+      "keywords": [
+        "Human reasoning, decision-making, and expectations about the future",
+        "Mid-training and reinforcement learning for human simulation with language models",
+        "Scaling behavioral simulation across diverse individuals and situations",
+        "Realistic human simulators for training and evaluating long-horizon agents"
+      ]
+    }
+  ],
   "references": [],
   "projects": [
     {

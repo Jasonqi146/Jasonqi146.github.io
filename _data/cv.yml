@@ -1,196 +1,397 @@
+---
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Zhengyang "Jason" Qi
-    - name: Role
-      value: Senior Research Scientist, Snorkel AI
-    - name: Location
-      value: San Francisco, CA
-    - name: Email
-      value: <a href="mailto:jasonqi146@gmail.com">jasonqi146@gmail.com</a>
-    - name: Links
-      value: <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ">Google Scholar</a> / <a href="https://github.com/Jasonqi146">GitHub</a> / <a href="https://www.linkedin.com/in/zhengyang-jason-qi/">LinkedIn</a>
-
-- title: Research Focus
-  type: nested_list
+  - name: Full Name
+    value: Zhengyang (Jason) Qi
+  - name: Role
+    value: Founding Research Scientist, Listen Labs
+  - name: Location
+    value: San Francisco Bay Area
+  - name: Email
+    value: <a href="mailto:jasonqi146@gmail.com">jasonqi146@gmail.com</a>
+  - name: Links
+    value: <a href="https://scholar.google.com/citations?user=MpjZP1oAAAAJ">Google
+      Scholar</a> / <a href="https://github.com/Jasonqi146">GitHub</a> / <a href="https://www.linkedin.com/in/zhengyang-jason-qi/">LinkedIn</a>
+- title: Research Interests
+  type: list
   contents:
-    - title: Post-training and agentic RL
-      items:
-        - Reinforcement learning for terminal and coding agents with GRPO, reward design, LLM-as-judge feedback, and environment data selection.
-        - Distributed rollout infrastructure for long-horizon agents and large-scale training loops.
-    - title: Evaluation and scalable oversight
-      items:
-        - Rubric design, rubric failure-mode diagnostics, reward-model evaluation, human-AI oversight, and preference pipelines.
-        - Benchmarks and interactive environments for coding agents, computer-use agents, clinical AI, social intelligence, and long-context reasoning.
-    - title: Complex systems taste
-      items:
-        - I study systems where behavior emerges through feedback: agents, social interaction, human judgment, and professional workflows.
-
+  - My recent research explores how people reason, make decisions, and form expectations
+    about the future. In particular, I study how mid-training and reinforcement learning
+    can help language models simulate these processes. I focus on scaling these simulations
+    across diverse individuals and situations, and on building realistic human simulators
+    for training and evaluating long-horizon agents.
+  - Ultimately, I hope to build models that reflect the richness and diversity of
+    human behavior, with the ambition of making realistic simulation possible for
+    any person, in any context.
 - title: Experience
   type: time_table
   contents:
-    - title: Senior Research Scientist
-      institution: Snorkel AI
-      location: San Francisco, CA
-      year: Sep 2025 - Present
-      description:
-        - Led RL post-training for terminal-based coding agents using GRPO, improving Terminal Bench 2.0 resolution rate from 5.6% to 13.4%.
-        - Built a multi-node agentic RL training backbone with Ray, Kubernetes, verl-style training, and containerized rollouts across 64 H200 GPUs and 6,000+ rollout environments.
-        - Curated multiturn human-preference and rubric pipelines for frontier coding agents, computer-use agents in EDA workflows, and clinical conversational agents.
-        - Scaled synthetic trajectory and distillation pipelines with rejection sampling for multi-step environment grounding.
-    - title: Machine Learning Research Engineer
-      institution: Scale AI
-      location: San Francisco, CA
-      year: Aug 2024 - Aug 2025
-      description:
-        - Led SFT and GRPO post-training for LLM judge and reward models, including 60k+ evaluation examples and 300k+ training examples across multilingual, instruction following, multimodal reasoning, STEM, and coding capabilities.
-        - Delivered a production reward judge model that outperformed GPT-4o on reward and preference alignment.
-        - Built scalable oversight systems, automated rating services, and A/B-tested metrics for human-AI data pipelines, reducing human labeling reliance by up to 60%.
-        - Developed quality-control agents for RLHF rubric pipelines using RAG, tool use, and multi-agent debate.
-    - title: Software Engineer, Machine Learning Intern
-      institution: Intuit
-      location: San Diego, CA
-      year: May 2023 - Aug 2023
-      description:
-        - Built ML microservices to identify redundant data across 1k+ variations of tax forms for 42M users using GPT-3.5, XGBoost, and Spring Boot.
-    - title: Software Engineer, Machine Learning Intern
-      institution: Intuit
-      location: Remote
-      year: Jun 2022 - Aug 2022
-      description:
-        - Built multimodal image-captioning systems with GPT, CLIP, Spark, CUDA, and PyTorch FSDP, reducing model size by 68% and inference latency by 82%.
-    - title: Co-Founder and Machine Learning Engineer
-      institution: Kiwi
-      location: Atlanta, GA
-      year: Dec 2020 - Dec 2021
-      description:
-        - Led a three-engineer team building multimodal recommendation and data pipelines across 18 retailers, automating 100k+ item acquisition and improving entity matching by 64% over baseline.
-
+  - title: Founding Research Scientist
+    institution: Listen Labs
+    location: San Francisco Bay Area
+    year: Sep 2026 - Present
+    description:
+    - Build longitudinal representations of human context that capture how people's
+      experiences, preferences, and expectations evolve over time and shape their
+      decisions.
+    - Develop reinforcement learning methods for post-training language models to
+      simulate human reasoning and decision-making across diverse individuals and
+      situations.
+    - Scale human simulation models to support realistic behavioral modeling and the
+      training and evaluation of long-horizon agents.
+  - title: Senior Research Scientist, Agent RL & Evaluation Research
+    institution: Snorkel AI
+    location: San Francisco, CA
+    year: Sep 2025 - Sep 2026
+    description:
+    - Designed and ran task curation and verification pipelines for SWE-Bench Pro,
+      Terminal-Bench 2.0, OSWorld 2.0, PostTrainBench, and EDA computer-use agent
+      tasks, spanning synthetic environment generation, verifier-validity checks,
+      and LLM-as-judge and rubric-based review; delivered agent-task datasets, frontier
+      coding-agent preference evaluations, and clinical-agent rubrics.
+    - Researched reward hacking, verifier validity, and rubric failure modes in agent
+      environments and evaluation pipelines to improve data quality; built RIFT (ICLR
+      2026 workshop), a rubric failure-mode taxonomy and automated diagnostics for
+      auditing evaluation and reward signals.
+    - 'Single-handedly built the company''s agentic RL training stack on verl and
+      Kubernetes: asynchronous, fault-tolerant rollout workers, sandboxed terminal-environment
+      execution, and multi-node training on 64 H200 GPUs with Ray, Megatron, and SGLang.'
+    - Trained long-horizon terminal agents with GRPO, improving Terminal-Bench 2.0
+      from 5.6% to 13.4% (Qwen3-32B) and from 36% to 41% (Qwen3.5-27B) through environment
+      selection, reward attribution with partial-credit assignment, rejection sampling,
+      and on-policy distillation.
+    - Published on automated benchmark design and milestone-based evaluation for RL;
+      advised research direction and environment/task design for OSWorld 2.0.
+  - title: Machine Learning Research Engineer
+    institution: Scale AI
+    location: San Francisco, CA
+    year: Aug 2024 - Aug 2025
+    description:
+    - Led post-training of multimodal LLM judge and reward models with reasoning RL
+      and RLHF (SFT, GRPO, and human preference supervision), curating 60k+ evaluation
+      and 300k+ training examples across multilingual instruction following, multimodal
+      reasoning, STEM, and coding; the production judge outperformed GPT-4o on human
+      reward and preference alignment.
+    - Built an agentic auto-evaluation system for scalable oversight of human--AI
+      data-generation pipelines; deployed on 10+ production pipelines, cutting human
+      labeling cost by up to 60% while preserving calibration and human-judgment quality.
+    - Built automated quality-control agents for RLHF rubric pipelines (RAG, tool
+      use, multi-agent debate), outperforming baseline agents across deployments.
+  - title: 'Graduate Research Assistant; advisor: Prof. Graham Neubig'
+    institution: Carnegie Mellon University, Language Technologies Institute
+    location: Pittsburgh, PA
+    year: Aug 2022 - May 2024
+    description:
+    - Researched interactive evaluation, social intelligence, multimodal ML, and reinforcement
+      learning for language agents; co-built the SOTOPIA interactive evaluation platform
+      (ICLR 2024 Spotlight) and the SOTOPIA-π self-play and self-reinforcement training
+      pipeline, leading to publications at ICLR, ACL, and EMNLP.
+    - Built research systems and datasets for simulated social environments, rubric-based
+      evaluation, self-play training, multimodal interaction modeling (MMoE), and
+      long-horizon dialogue understanding (Avalon).
+  - title: 'Undergraduate Researcher; advisors: Prof. Diyi Yang and Prof. Xu Chu'
+    institution: Georgia Institute of Technology and Emory University
+    location: Atlanta, GA
+    year: Aug 2017 - May 2022
+    description:
+    - Conducted research in social computing, NLP, and data-centric ML; published
+      a user study of how Reddit users navigate controversial discussions, with design
+      implications for diverse-opinion interfaces (IEEE PacificVis 2023).
+  - title: Software Engineer Intern, Machine Learning
+    institution: Intuit
+    location: ''
+    year: May 2023 - Aug 2023
+    description:
+    - Built LLM and ML services for TurboTax tax-form de-duplication across 1k+ form
+      variations, supporting large-scale filing workflows for 42M users.
+  - title: Software Engineer Intern, Machine Learning
+    institution: Intuit
+    location: ''
+    year: Jun 2022 - Aug 2022
+    description:
+    - Built multimodal image-captioning and large-batch inference pipelines for corporate
+      media management, including Spark data processing and CUDA/PyTorch optimization.
+  - title: Co-Founder and Machine Learning Engineer
+    institution: Kiwi
+    location: ''
+    year: Dec 2020 - Dec 2021
+    description:
+    - Led development of a fashion recommendation and entity-matching system using
+      text, image, and metadata from 18 retailer websites.
+  - title: Innovation Engineer Intern
+    institution: EPI-USE America, Inc.
+    location: Atlanta, Georgia, United States
+    year: Jun 2021 - Aug 2021
+    description:
+    - Implemented a graphical interface for interactive visualization of information
+      networks for client.
+    - Built a BERT classifier for privacy leakage detection, replacing 8+ hrs/week
+      human labor.
+  - title: Assistant Virtual Reality Instructor
+    institution: TechX Academy
+    location: Shanghai, China
+    year: Jul 2017 - Aug 2017
+    description: []
 - title: Education
   type: time_table
   contents:
-    - title: M.S. in Intelligent Information Systems
-      institution: Carnegie Mellon University, School of Computer Science
-      location: Pittsburgh, PA
-      year: Aug 2022 - May 2024
-      description:
-        - GPA 3.84/4.30
-    - title: B.S. in Computer Science; B.A. in Mathematics and Economics
-      institution: Georgia Institute of Technology and Emory University, Dual Degree Program
-      location: Atlanta, GA
-      year: Aug 2017 - May 2022
-      description:
-        - GPA 3.92/4.00
-
+  - title: M.S. in Intelligent Information Systems, Language Technologies Institute
+    institution: Carnegie Mellon University, School of Computer Science
+    location: Pittsburgh, PA
+    year: Aug 2022 - May 2024
+    description:
+    - 'Research: RL for language agents, social intelligence, and multimodal ML; advisor:
+      Prof. Graham Neubig.'
+  - title: B.S. in Computer Science; B.A. in Mathematics and Economics
+    institution: Georgia Institute of Technology and Emory University, Dual Degree
+      Program
+    location: Atlanta, GA
+    year: Aug 2017 - May 2022
+    description: []
 - title: Publications
   type: time_table
   contents:
-    - title: "RIFT: A RubrIc Failure Mode Taxonomy and Automated Diagnostics"
-      institution: Data Problems for Foundation Models Workshop at ICLR 2026
-      year: 2026
-      description:
-        - Zhengyang Qi, Charles Andrew Dickens, Derek Pham, Amanda Dsouza, Armin Parchami, Frederic Sala, Paroma Varma.
-      linkitems:
-        - linkname: openreview
-          link: https://openreview.net/forum?id=tCxZYDLvuu
-        - linkname: arxiv
-          link: https://arxiv.org/abs/2604.01375
-    - title: Automating Benchmark Design
-      institution: arXiv preprint
-      year: 2025
-      description:
-        - Amanda Dsouza, Harit Vishwakarma, Zhengyang Qi, Justin Bauer, Derek Pham, Thomas Walshe, Armin Parchami, Frederic Sala, Paroma Varma.
-      linkitems:
-        - linkname: arxiv
-          link: https://arxiv.org/abs/2510.25039
-        - linkname: openreview
-          link: https://openreview.net/forum?id=efAANptQmt
-    - title: "Sotopia-RL: Reward Design for Social Intelligence"
-      institution: arXiv preprint
-      year: 2025
-      description:
-        - Zhengyang Qi*, Haofei Yu*, Yining Zhao*, Kolby Nottingham, Keyang Xuan, Bodhisattwa Prasad Majumder, Hao Zhu, Paul Pu Liang, Jiaxuan You.
-        - "* Equal contribution."
-      linkitems:
-        - linkname: arxiv
-          link: https://arxiv.org/abs/2508.03905
-    - title: "MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction Experts"
-      institution: EMNLP 2024 Main Conference
-      year: 2024
-      description:
-        - Haofei Yu*, Zhengyang Qi*, Lawrence Keunho Jang*, Ruslan Salakhutdinov, Louis-Philippe Morency, Paul Pu Liang.
-        - "* Equal contribution."
-      linkitems:
-        - linkname: paper
-          link: https://aclanthology.org/2024.emnlp-main.558/
-    - title: "SOTOPIA-pi: Interactive Learning of Socially Intelligent Language Agents"
-      institution: ACL 2024 Main Conference
-      year: 2024
-      description:
-        - Ruiyi Wang*, Haofei Yu*, Wenxin Zhang*, Zhengyang Qi*, Maarten Sap, Yonatan Bisk, Graham Neubig, Hao Zhu.
-        - "* Equal contribution."
-      linkitems:
-        - linkname: paper
-          link: https://aclanthology.org/2024.acl-long.698/
-    - title: "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
-      institution: ICLR 2024 Spotlight
-      year: 2024
-      description:
-        - Xuhui Zhou, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Zhengyang Qi, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, Maarten Sap.
-      linkitems:
-        - linkname: openreview
-          link: https://openreview.net/forum?id=mM7VurbA4r
-        - linkname: arxiv
-          link: https://arxiv.org/abs/2310.11667
-    - title: Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models
-      institution: Findings of EMNLP 2023
-      year: 2023
-      description:
-        - Simon Stepputtis, Joseph Campbell, Yaqi Xie, Zhengyang Qi, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Michael Lewis, Katia P. Sycara.
-      linkitems:
-        - linkname: paper
-          link: https://aclanthology.org/2023.findings-emnlp.748/
-        - linkname: video
-          link: https://aclanthology.org/2023.findings-emnlp.748.mp4
-    - title: "Understanding People's Needs in Viewing Diverse Social Opinions about Controversial Topics"
-      institution: IEEE Pacific Visualization Symposium 2023
-      year: 2023
-      description:
-        - Hayeong Song, Zhengyang Qi, John Stasko, Diyi Yang.
-      linkitems:
-        - linkname: paper
-          link: https://ieeexplore.ieee.org/abstract/document/10148312
-
+  - title: Learning to Simulate Individuals from Macro Social Signals
+    institution: arXiv preprint arXiv:2610.07062, 2026
+    year: 2026
+    description:
+    - Yining Zhao, Bushi Liu, Haofei Yu, Zhengyang Qi, Shanyong Wang, Chuyue Li, Yuxiang
+      Liu, Jiaxuan You
+    - Introduces macro2mind, which uses GRPO with prediction-market signals to learn
+      behavioral reasoning that transfers to individual simulation.
+    linkitems:
+    - linkname: Paper
+      link: https://arxiv.org/abs/2610.07062
+  - title: 'RIFT: A Rubric Failure Mode Taxonomy and Automated Diagnostics'
+    institution: ICLR 2026 Data Problems for Foundation Models Workshop, 2026
+    year: 2026
+    description:
+    - Zhengyang Qi, Charles Andrew Dickens, Derek Pham, Amanda Dsouza, Armin Parchami,
+      Frederic Sala, Paroma Varma
+    - Introduces a taxonomy and automated diagnostics for detecting rubric failure
+      modes before they corrupt evaluation or reward signals
+    linkitems:
+    - linkname: Paper
+      link: https://openreview.net/forum?id=tCxZYDLvuu
+  - title: 'OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World
+      Tasks'
+    institution: arXiv preprint, 2026
+    year: 2026
+    description:
+    - Mengqi Yuan, Zilong Zhou, Xinzhuang Xiong, et al., Zhengyang Qi (Advisor), Vincent
+      Sunn Chen (Advisor), Frederic Sala (Advisor), ..., Tao Yu
+    - A benchmark of long-horizon, real-world computer-use tasks with verifiable end-state
+      evaluation; advised project design, research direction, and paper writing
+    linkitems:
+    - linkname: Paper
+      link: https://arxiv.org/abs/2606.29537
+  - title: Automating Benchmark Design
+    institution: arXiv preprint arXiv:2510.25039, 2025
+    year: 2025
+    description:
+    - Amanda Dsouza, Harit Vishwakarma, Zhengyang Qi, Justin Bauer, Derek Pham, Thomas
+      Walshe, Armin Parchami, Frederic Sala, Paroma Varma
+    - Presents BeTaL, an interactive LLM-in-the-loop framework for automatically generating
+      model-specific benchmarks across difficulty levels
+    linkitems:
+    - linkname: Paper
+      link: https://arxiv.org/abs/2510.25039
+  - title: 'Sotopia-RL: Reward Design for Social Intelligence'
+    institution: arXiv preprint arXiv:2508.03905, 2025
+    year: 2025
+    description:
+    - Haofei Yu*, Zhengyang Qi*, Yining Zhao*, Kolby Nottingham, Keyang Xuan, Bodhisattwa
+      Prasad Majumder, Hao Zhu, Paul Pu Liang, Jiaxuan You
+    - '* Equal contribution.'
+    - Studies reward design, multi-signal rewards, and long-horizon credit assignment
+      for RL training of socially intelligent language agents
+    linkitems:
+    - linkname: Paper
+      link: https://arxiv.org/abs/2508.03905
+  - title: 'MMoE: Enhancing Multimodal Models with Mixtures of Multimodal Interaction
+      Experts'
+    institution: Proceedings of the 2024 Conference on Empirical Methods in Natural
+      Language Processing, 2024
+    year: 2024
+    description:
+    - Haofei Yu*, Zhengyang Qi*, Lawrence Keunho Jang*, Ruslan Salakhutdinov, Louis-Philippe
+      Morency, Paul Pu Liang
+    - Trains specialized experts for distinct cross-modal interaction patterns to
+      improve multimodal model performance
+    linkitems:
+    - linkname: Paper
+      link: https://aclanthology.org/2024.emnlp-main.558/
+  - title: 'SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents'
+    institution: Proceedings of the 62nd Annual Meeting of the Association for Computational
+      Linguistics, 2024
+    year: 2024
+    description:
+    - Ruiyi Wang*, Haofei Yu*, Wenxin Zhang*, Zhengyang Qi*, Maarten Sap, Yonatan
+      Bisk, Graham Neubig, Hao Zhu
+    - Improves social intelligence through interactive self-play and self-reinforcement
+      learning
+    linkitems:
+    - linkname: Paper
+      link: https://aclanthology.org/2024.acl-long.698/
+  - title: 'SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents'
+    institution: International Conference on Learning Representations, 2024. Spotlight
+    year: 2024
+    description:
+    - Xuhui Zhou*, Hao Zhu*, Leena Mathur, Ruohong Zhang, Haofei Yu, Zhengyang Qi,
+      Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, Maarten Sap
+    - Introduces interactive environments and rubric-based evaluation for social intelligence
+      in language agents
+    linkitems:
+    - linkname: Paper
+      link: https://arxiv.org/abs/2310.11667
+  - title: Long-Horizon Dialogue Understanding for Role Identification in the Game
+      of Avalon with Large Language Models
+    institution: 'Findings of the Association for Computational Linguistics: EMNLP,
+      2023'
+    year: 2023
+    description:
+    - Simon Stepputtis, Joseph Campbell, Yaqi Xie, Zhengyang Qi, Wenxin Zhang, Ruiyi
+      Wang, Sanketh Rangreji, Charles Michael Lewis, Katia P. Sycara
+    - Evaluates hidden-role and deception reasoning in Avalon, showing that long-horizon
+      social reasoning remains difficult for LLMs
+    linkitems:
+    - linkname: Paper
+      link: https://aclanthology.org/2023.findings-emnlp.748/
+  - title: Understanding People's Needs in Viewing Diverse Social Opinions about Controversial
+      Topics
+    institution: IEEE 16th Pacific Visualization Symposium, 2023
+    year: 2023
+    description:
+    - Hayeong Song, Zhengyang Qi, John Stasko, Diyi Yang
+    - A user study of how people seek out and navigate diverse opinions on controversial
+      topics, with implications for interface design
+    linkitems:
+    - linkname: Paper
+      link: https://doi.org/10.1109/PacificVis56936.2023.00008
+- title: Talks and Community Events
+  type: time_table
+  contents:
+  - title: Snorkel AI Reading Group
+    institution: Host
+    year: 2026 (series)
+    description:
+    - Coordinate invited talks, introduce speakers, and co-lead Q&A sessions; speakers
+      include researchers from Stanford, UC Berkeley, and Google DeepMind
+    linkitems:
+    - linkname: Post 1
+      link: https://www.linkedin.com/feed/update/urn:li:activity:7477760453650112512/
+    - linkname: Post 2
+      link: https://www.linkedin.com/feed/update/urn:li:activity:7468365425668632577/
+    - linkname: Post 3
+      link: https://www.linkedin.com/posts/zhengyang-jason-qi_thanks-everyone-for-joining-us-today-our-ugcPost-7460509438093766656-cUkX/
+    - linkname: Event
+      link: https://luma.com/hl6lmphe
+  - title: Daytona AI Researchers Meetup at Stanford
+    institution: Speaker
+    year: Apr 29, 2026
+    description:
+    - Stanford University; hosted with FounderCoHo. Talk on RL agents, post-training,
+      evaluation, and AI infrastructure
+    linkitems:
+    - linkname: Post
+      link: https://www.linkedin.com/posts/zhengyang-jason-qi_super-glad-to-speak-at-daytona-and-foundercoho-ugcPost-7455706671659794432-thue/
+    - linkname: Agenda
+      link: https://luma.com/i65trrwy
+  - title: OpenEnv Hackathon
+    institution: Final Judge
+    year: Mar 7–8, 2026
+    description:
+    - Sponsored by Snorkel AI with Cerebral Valley and PyTorch; judged projects on
+      environment design, model training, multi-agent reasoning, long-horizon planning,
+      world modeling, and self-improvement
+    linkitems:
+    - linkname: Post
+      link: https://www.linkedin.com/posts/zhengyang-jason-qi_super-glad-to-serve-as-a-final-judge-it-share-7436931531450810368-OP0D/
+    - linkname: Event
+      link: https://pytorch.org/event/openenv-hackathon-sf/
+  - title: Daytona x Sentry AI Builders Meetup
+    institution: Speaker
+    year: Dec 9, 2025
+    description:
+    - San Francisco; hosted in partnership with Sentry
+    linkitems:
+    - linkname: Post
+      link: https://www.linkedin.com/posts/this-tuesday-we-hosted-our-final-daytona-ugcPost-7404873294425804800-9yJB/
+    - linkname: Agenda
+      link: https://luma.com/fcjkm6ev
+  - title: AGI House Self-Evolving Agents Build Day
+    institution: Speaker
+    year: Nov 1, 2025
+    description:
+    - Palo Alto; hands-on event for prototyping adaptive and self-improving AI systems
+    linkitems:
+    - linkname: Post
+      link: https://www.linkedin.com/posts/zhengyang-jason-qi_excited-to-be-speaking-at-agi-houses-self-evolving-share-7389405230964043777-aphM/
+    - linkname: Recap
+      link: https://blog.agihouse.org/posts/self-evolving-agents-the-emerging-stack-and-field-insights
+- title: Academic Service
+  type: list
+  contents:
+  - 'ACL Rolling Review (ARR): Regular Reviewer (ongoing).'
+  - 'Conference reviewer: ICLR 2027, AAAI 2027, ICML 2026, NeurIPS 2026, ICLR 2026,
+    AAAI 2026, and NeurIPS 2025.'
+  - 'Cal Hacks 2026: Judge (upcoming).'
+- title: Awards and Honors
+  type: time_table
+  contents:
+  - title: ICML 2026 Silver Reviewer Award
+    institution: International Conference on Machine Learning
+    year: 2026
+    description:
+    - ICML 2026 Silver Reviewer Award. International Conference on Machine Learning,
+      2026.
+  - title: CMU RISE Scholarship
+    institution: Carnegie Mellon University
+    year: 2023
+    description:
+    - CMU RISE Scholarship ($5k research award). Carnegie Mellon University, 2023.
+  - title: Top 1.6% Placement, Amex Default Prediction
+    institution: Kaggle
+    year: 2022
+    description:
+    - Top 1.6% Placement, Amex Default Prediction. Kaggle; ensemble modeling and feature
+      engineering, 2022.
 - title: Projects
   type: time_table
   contents:
-    - title: Chinese FLAN-T5
-      year: Open Source
-      description:
-        - Contributed 20+ pipelines for instruction-following LLMs in Chinese and eight additional languages.
-    - title: Amex Default Prediction
-      year: Kaggle
-      description:
-        - Built ensemble models and advanced feature engineering for a top 1.6% competition finish.
-    - title: Distributed Systems
-      year: Go
-      description:
-        - Implemented reliable UDP networking, RAFT consensus, and an actor-model system for multi-user state management.
-    - title: Search Engine Systems
-      year: Java/Lucene
-      description:
-        - Developed a search-engine library implementing BM25, Indri, learning-to-rank, and diversification.
-
+  - title: Chinese FLAN-T5
+    year: Open Source
+    description:
+    - Contributed 20+ pipelines for instruction-following LLMs in Chinese and eight
+      additional languages.
+  - title: Amex Default Prediction
+    year: Kaggle
+    description:
+    - Built ensemble models and advanced feature engineering for a top 1.6% competition
+      finish.
+  - title: Distributed Systems
+    year: Go
+    description:
+    - Implemented reliable UDP networking, RAFT consensus, and an actor-model system
+      for multi-user state management.
+  - title: Search Engine Systems
+    year: Java/Lucene
+    description:
+    - Developed a search-engine library implementing BM25, Indri, learning-to-rank,
+      and diversification.
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Languages
-      items:
-        - Python, C++, Go, Java, TypeScript, SQL, Unix shell.
-    - title: ML and systems
-      items:
-        - PyTorch, Ray, vLLM, SGLang, Triton, CUDA, FSDP, DeepSpeed, Spark, Kubernetes.
-    - title: Frontier AI
-      items:
-        - RLHF/RLAIF, PPO, GRPO, DPO, ReST, reward modeling, rubrics, scalable oversight, synthetic data, test-time compute, chain-of-thought, multimodal models.
+  - title: Post-Training Data and Evaluation
+    items:
+    - RLHF/RLAIF, GRPO, PPO, DPO, SFT, reward modeling, process rewards, LLM-as-judge,
+      rubric evaluation, scalable oversight, synthetic data generation, benchmark
+      and environment curation, reasoning RL, multimodal models
+  - title: ML and Systems
+    items:
+    - PyTorch, Hugging Face, Ray, verl, vLLM, SGLang, CUDA, Docker, AWS, Kubernetes,
+      Spark, FSDP, Megatron, DeepSpeed
+  - title: Programming Languages
+    items:
+    - Python, Unix shell, C, C++, SQL, JavaScript, Java

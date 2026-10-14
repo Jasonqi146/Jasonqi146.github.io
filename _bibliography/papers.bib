@@ -1,7 +1,25 @@
 ---
 ---
 
+% Updated from the approved profile on 2026-10-14.
+% OSWorld 2.0 authors: https://arxiv.org/abs/2606.29537
+% SOTOPIA-pi author order: https://aclanthology.org/2024.acl-long.698/
+% PacificVis DOI confirmed at https://arxiv.org/abs/2304.11561
+
+@article{zhao2026macro2mind,
+  title={{Learning to Simulate Individuals from Macro Social Signals}},
+  author={Zhao, Yining and Liu, Bushi and Yu, Haofei and Qi, Zhengyang and Wang, Shanyong and Li, Chuyue and Liu, Yuxiang and You, Jiaxuan},
+  journal={arXiv preprint arXiv:2610.07062},
+  year={2026},
+  abbr={arXiv},
+  paper={https://arxiv.org/abs/2610.07062},
+  arxiv={2610.07062},
+  tldr={Introduces macro2mind, which uses GRPO with prediction-market signals to learn behavioral reasoning that transfers to individual simulation.},
+  selected={true}
+}
+
 @inproceedings{qi2026rift,
+  selected = {true},
   abbr = {ICLR WS},
   title = {RIFT: A RubrIc Failure Mode Taxonomy and Automated Diagnostics},
   author = {Qi, Zhengyang and Dickens, Charles Andrew and Pham, Derek and Dsouza, Amanda and Parchami, Armin and Sala, Frederic and Varma, Paroma},
@@ -11,6 +29,18 @@
   html = {https://openreview.net/forum?id=tCxZYDLvuu},
   arxiv = {2604.01375},
   tldr = {RIFT introduces a taxonomy and automated diagnostics for detecting rubric failure modes before they affect evaluation or training.}
+}
+
+@article{yuan2026osworld,
+  title={{OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks}},
+  author={Yuan*, Mengqi and Zhou*, Zilong and Xiong*, Xinzhuang and Wu, Weiming and Sun, Jiayang and Song, Jiamin and Cui, Kaiqian and Wang, Bowen and Wu, Haoyuan and Li, Yitong and Lu, Dunjie and Lu, Haikong and Zhen, Qi and Wang, Xinyuan and Deng, Jiaqi and Yang, Yuhao and Chen, Cheng and Zheng, Boyuan and Su, Alex and Yu, Xiao and Zou, Hao and Agashe, Saaket and Lu, Xing Han and Kaur, Manpreet and Qi, Zhengyang and Chen, Vincent Sunn and Sala, Frederic and Liu, Dayiheng and Lin, Junyang and Yu, Zhou and Su, Yu and Reddy, Siva and Wang, Xin Eric and Qi, Peng and Xie, Tianbao and Yu, Tao},
+  journal={arXiv preprint arXiv:2606.29537},
+  year={2026},
+  abbr={arXiv},
+  paper={https://arxiv.org/abs/2606.29537},
+  arxiv={2606.29537},
+  tldr={OSWorld 2.0 benchmarks long-horizon, real-world computer-use tasks with verifiable end-state evaluation.},
+  note={* Equal contribution. Zhengyang Qi contributed as an advisor.}
 }
 
 @article{dsouza2025betal,
@@ -26,9 +56,10 @@
 }
 
 @article{yu2025sotopiarl,
+  selected = {true},
   abbr = {ArXiv},
   title = {Sotopia-RL: Reward Design for Social Intelligence},
-  author = {Qi*, Zhengyang and Yu*, Haofei and Zhao*, Yining and Nottingham, Kolby and Xuan, Keyang and Majumder, Bodhisattwa Prasad and Zhu, Hao and Liang, Paul Pu and You, Jiaxuan},
+  author = {Yu*, Haofei and Qi*, Zhengyang and Zhao*, Yining and Nottingham, Kolby and Xuan, Keyang and Majumder, Bodhisattwa Prasad and Zhu, Hao and Liang, Paul Pu and You, Jiaxuan},
   journal = {arXiv preprint arXiv:2508.03905},
   year = {2025},
   paper = {https://arxiv.org/abs/2508.03905},
@@ -51,8 +82,9 @@
 }
 
 @inproceedings{wang2024sotopiapi,
+  selected = {true},
   abbr = {ACL},
-  title = {SOTOPIA-pi: Interactive Learning of Socially Intelligent Language Agents},
+  title = {SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents},
   author = {Wang*, Ruiyi and Yu*, Haofei and Zhang*, Wenxin and Qi*, Zhengyang and Sap, Maarten and Bisk, Yonatan and Neubig, Graham and Zhu, Hao},
   booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},
   year = {2024},
@@ -60,19 +92,19 @@
   html = {https://aclanthology.org/2024.acl-long.698/},
   doi = {10.18653/v1/2024.acl-long.698},
   note = {* Equal contribution},
-  tldr = {SOTOPIA-pi improves social intelligence through interactive self-play and self-reinforcement.}
+  tldr = {SOTOPIA-π improves social intelligence through interactive self-play and self-reinforcement.}
 }
 
 @inproceedings{zhou2024sotopia,
   abbr = {ICLR},
   title = {SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents},
-  author = {Zhou, Xuhui and Zhu, Hao and Mathur, Leena and Zhang, Ruohong and Yu, Haofei and Qi, Zhengyang and Morency, Louis-Philippe and Bisk, Yonatan and Fried, Daniel and Neubig, Graham and Sap, Maarten},
+  author = {Zhou*, Xuhui and Zhu*, Hao and Mathur, Leena and Zhang, Ruohong and Yu, Haofei and Qi, Zhengyang and Morency, Louis-Philippe and Bisk, Yonatan and Fried, Daniel and Neubig, Graham and Sap, Maarten},
   booktitle = {The Twelfth International Conference on Learning Representations},
   year = {2024},
   paper = {https://arxiv.org/abs/2310.11667},
   html = {https://openreview.net/forum?id=mM7VurbA4r},
   arxiv = {2310.11667},
-  note = {Spotlight},
+  note = {Spotlight. * Equal contribution},
   tldr = {SOTOPIA introduces interactive environments and rubrics for evaluating social intelligence in language agents.}
 }
 
@@ -95,7 +127,7 @@
   booktitle = {2023 IEEE 16th Pacific Visualization Symposium (PacificVis)},
   year = {2023},
   pages = {6--10},
-  paper = {https://ieeexplore.ieee.org/abstract/document/10148312},
+  paper = {https://doi.org/10.1109/PacificVis56936.2023.00008},
   html = {https://ieeexplore.ieee.org/abstract/document/10148312},
   doi = {10.1109/PacificVis56936.2023.00008},
   tldr = {This work studies how Reddit users navigate controversial discussions and extracts design implications for interfaces that expose diverse social opinions.}

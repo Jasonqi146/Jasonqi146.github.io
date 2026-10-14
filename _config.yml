@@ -8,9 +8,9 @@ middle_name:
 last_name: Qi
 email: jasonqi146@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Post-training and evaluation researcher building feedback systems, agentic RL infrastructure, rubrics, and environments for complex AI systems.
+  Zhengyang (Jason) Qi is a Founding Research Scientist at Listen Labs studying human reasoning, decision-making, and behavioral simulation with language models and reinforcement learning.
 footer_text:
-keywords: zhengyang qi, jason qi, post-training, evaluation research, agentic rl, reinforcement learning, reward modeling, rubrics, scalable oversight, benchmark design, data curation, complex systems # add your own keywords or leave empty
+keywords: zhengyang qi, jason qi, human reasoning, decision making, human simulation, reinforcement learning, language models, post-training, long-horizon agents, social intelligence
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: flask.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -93,7 +93,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: MpjZP1oAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -238,6 +238,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - assets/html/relativity.html
+  - assets/pdf/example_pdf.pdf
 keep_files:
   - CNAME
   - .nojekyll
