@@ -147,9 +147,7 @@
       "area": "M.S. in Intelligent Information Systems, Language Technologies Institute",
       "startDate": "2022-08",
       "endDate": "2024-05",
-      "courses": [
-        "Research: RL for language agents, social intelligence, and multimodal ML; advisor: Prof. Graham Neubig."
-      ]
+      "courses": ["Research: RL for language agents, social intelligence, and multimodal ML; advisor: Prof. Graham Neubig."]
     },
     {
       "institution": "Georgia Institute of Technology and Emory University, Dual Degree Program",
@@ -293,15 +291,7 @@
     },
     {
       "name": "Programming Languages",
-      "keywords": [
-        "Python",
-        "Unix shell",
-        "C",
-        "C++",
-        "SQL",
-        "JavaScript",
-        "Java"
-      ]
+      "keywords": ["Python", "Unix shell", "C", "C++", "SQL", "JavaScript", "Java"]
     }
   ],
   "languages": [],
@@ -321,33 +311,25 @@
     {
       "name": "Chinese FLAN-T5 (Open Source)",
       "summary": "Contributed 20+ pipelines for instruction-following LLMs in Chinese and eight languages.",
-      "highlights": [
-        "Expanded multilingual instruction-following support and open-source tooling across Chinese and eight additional languages."
-      ],
+      "highlights": ["Expanded multilingual instruction-following support and open-source tooling across Chinese and eight additional languages."],
       "url": ""
     },
     {
       "name": "Amex Default Prediction (Kaggle Top 1.6%)",
       "summary": "Built ensemble models and advanced feature-engineering pipelines for a top-ranked competition finish.",
-      "highlights": [
-        "Combined ensemble methods and feature engineering to place in the top 1.6% of the competition."
-      ],
+      "highlights": ["Combined ensemble methods and feature engineering to place in the top 1.6% of the competition."],
       "url": ""
     },
     {
       "name": "Distributed Systems (Go)",
       "summary": "Implemented core distributed systems building blocks from scratch.",
-      "highlights": [
-        "Built UDP-based reliable networking, RAFT consensus, and an actor-model system for multi-user state management."
-      ],
+      "highlights": ["Built UDP-based reliable networking, RAFT consensus, and an actor-model system for multi-user state management."],
       "url": ""
     },
     {
       "name": "Search Engine Systems (Java, Lucene)",
       "summary": "Developed a search-engine library covering classical IR algorithms.",
-      "highlights": [
-        "Implemented BM25, Indri, learning-to-rank, and diversification in an OOP-centric Java/Lucene system."
-      ],
+      "highlights": ["Implemented BM25, Indri, learning-to-rank, and diversification in an OOP-centric Java/Lucene system."],
       "url": ""
     }
   ]
