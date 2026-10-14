@@ -1,6 +1,9 @@
 ---
 layout: page
-title: professional projects
+title: Research in practice
+nav_title: Projects
+eyebrow: Selected systems
+description: Infrastructure for agent training, evaluation, and scalable oversight.
 permalink: /projects/
 nav: true
 nav_order: 4

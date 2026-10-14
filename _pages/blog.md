@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false
 nav_order: 5
 pagination:
   enabled: true
@@ -15,10 +15,12 @@ pagination:
 
 <div class="post blog-simple">
   <header class="post-header">
-    <h1 class="post-title">blog</h1>
+    <p class="eyebrow">Notes &amp; essays</p>
+    <h1 class="post-title">Writing</h1>
   </header>
 
   <article>
+    {% if site.posts.size == 0 %}<p>No essays published yet.</p>{% endif %}
     <ul class="simple-post-list">
       {% for post in site.posts %}
         <li>

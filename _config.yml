@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text:
 keywords: zhengyang qi, jason qi, human reasoning, decision making, human simulation, reinforcement learning, language models, post-training, long-horizon agents, social intelligence
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: flask.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: jq-mark.svg # personal monogram favicon
 
 url: https://jasonqi146.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
