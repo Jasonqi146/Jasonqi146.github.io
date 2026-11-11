@@ -2,7 +2,6 @@
 layout: page
 title: "Talks & service"
 nav_title: Talks & service
-eyebrow: Community
 description: Research conversations, invited talks, and academic service.
 permalink: /talks/
 nav: true

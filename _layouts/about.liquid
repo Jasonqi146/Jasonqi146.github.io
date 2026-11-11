@@ -4,15 +4,9 @@ layout: default
 <div class="post about-page">
   <header class="profile-hero">
     <div class="hero-copy">
-      <p class="eyebrow">AI &amp; human behavior</p>
-      <h1 class="hero-name">Zhengyang Qi<span class="name-period">.</span></h1>
-      <p class="hero-alias">Jason <span aria-hidden="true">/</span> <span lang="zh">齐正阳</span></p>
+      <h1 class="hero-name">Zhengyang Qi</h1>
+      <p class="hero-alias">Jason <span aria-hidden="true">·</span> <span lang="zh">齐正阳</span></p>
       <p class="hero-pronunciation">he/him · pronounced “Jung-yahng Chee”</p>
-      <div class="hero-intro">{{ page.introduction | markdownify }}</div>
-      <div class="home-actions">
-        <a class="action-primary" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
-        <a class="action-secondary" href="{{ '/assets/pdf/zhengyang_qi_resume.pdf' | relative_url }}">Full CV <span aria-hidden="true">↗</span></a>
-      </div>
     </div>
     <figure class="hero-portrait">
       <img
@@ -22,16 +16,16 @@ layout: default
         alt="Illustrated portrait of Zhengyang (Jason) Qi"
         fetchpriority="high"
       >
-      <figcaption>San Francisco Bay Area</figcaption>
     </figure>
+    <div class="hero-intro">{{ page.introduction | markdownify }}</div>
   </header>
   <div class="profile-contact">
     <a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
     <nav class="profile-socials" aria-label="Professional profiles">
-      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Scholar <span aria-hidden="true">↗</span></a>
-      <a href="https://www.linkedin.com/in/zhengyang-jason-qi/">LinkedIn <span aria-hidden="true">↗</span></a>
-      <a href="https://github.com/Jasonqi146">GitHub <span aria-hidden="true">↗</span></a>
-      <a href="https://x.com/qi_zhengyang">X <span aria-hidden="true">↗</span></a>
+      <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Scholar</a>
+      <a href="https://www.linkedin.com/in/zhengyang-jason-qi/">LinkedIn</a>
+      <a href="https://github.com/Jasonqi146">GitHub</a>
+      <a href="https://x.com/qi_zhengyang">X</a>
     </nav>
   </div>
   <article class="home-content">{{ content }}</article>

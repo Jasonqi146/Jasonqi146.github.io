@@ -3,7 +3,6 @@ layout: page
 permalink: /publications/
 title: Research & publications
 nav_title: Research
-eyebrow: Publications
 description: Preprints and peer-reviewed work.
 nav: true
 nav_order: 2

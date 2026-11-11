@@ -12,7 +12,6 @@
     "ghcr.io/devcontainers/features/node:1": {}
     //"ghcr.io/devcontainers-contrib/features/prettier:1": {}
   },
-  
 
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
   "postCreateCommand": "npm i -g prettier",

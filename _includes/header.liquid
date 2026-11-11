@@ -1,7 +1,6 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <nav class="site-nav container" aria-label="Main navigation">
-    <a class="site-monogram" href="{{ '/' | relative_url }}" aria-label="Zhengyang Qi — home">JQ<span aria-hidden="true">.</span></a>
     <ul class="site-nav-links">
       <li>
         <a
@@ -21,15 +20,9 @@
               href="{{ destination | relative_url }}"
               {% if page.url contains p.url %}
                 aria-current="page"
-              {% endif -%}
-              {% if p.permalink == '/cv/' %}
-                class="nav-cv"
               {% endif %}
             >
-              {{ p.nav_title | default: p.title -}}
-              {%- if p.permalink == '/cv/' -%}
-                <span aria-hidden="true"> ↗</span>
-              {%- endif %}
+              {{ p.nav_title | default: p.title }}
             </a>
           </li>
         {% endif %}
