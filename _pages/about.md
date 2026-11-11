@@ -12,7 +12,7 @@ introduction: >
   </div>
   <div class="section-body research-statement">
     <p>My recent research explores how people reason, make decisions, and form expectations about the future. In particular, I study how mid-training and reinforcement learning can help language models simulate these processes. I focus on scaling these simulations across diverse individuals and situations, and on building realistic human simulators for training and evaluating long-horizon agents.</p>
-    <p>Ultimately, I hope to build models that reflect the richness and diversity of human behavior, with the ambition of making realistic simulation possible for any person, in any context.</p>
+    <p><strong>Ultimately, I hope to build models that reflect the richness and diversity of human behavior, with the ambition of making realistic simulation possible for any person, in any context.</strong></p>
   </div>
 </section>
 
