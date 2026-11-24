@@ -140,7 +140,15 @@
       "highlights": []
     }
   ],
-  "volunteer": [],
+  "volunteer": [
+    {
+      "organization": "Cal Hacks Foundation",
+      "position": "Volunteer Judge, Cal Hacks 13.0",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "summary": "Reviewed 19 student projects at Cal Hacks 13.0 in San Francisco using a shared rubric covering technical complexity, originality, potential impact, feasibility, and usability."
+    }
+  ],
   "education": [
     {
       "institution": "Carnegie Mellon University, School of Computer Science",

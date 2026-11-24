@@ -13,11 +13,17 @@ nav_order: 3
 - **ACL Rolling Review (ARR):** Regular Reviewer (ongoing).
 - **Conference reviewing:** ICLR 2027, AAAI 2027, ICML 2026, NeurIPS 2026, ICLR 2026, AAAI 2026, and NeurIPS 2025.
 - **ICML 2026 Silver Reviewer Award.**
-- **Cal Hacks 2026:** Judge (upcoming).
+- **Cal Hacks 13.0:** Volunteer Judge, October 23–25, 2026.
 
 ## Talks and Community Events
 
 <section class="talk-list">
+  <article class="talk-entry">
+    <p class="talk-entry-date">Oct 23–25, 2026</p>
+    <h3>Cal Hacks 13.0</h3>
+    <p><strong>Volunteer Judge.</strong> Reviewed 19 student projects at the San Francisco hackathon using a shared rubric covering technical complexity, originality, potential impact, feasibility, and usability.</p>
+  </article>
+
   <article class="talk-entry">
     <p class="talk-entry-date">2026 (series)</p>
     <h3>Snorkel AI Reading Group</h3>
